@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support An Kỳ | Nồi Lẩu Cay Của An Kỳ</title>
+    <!-- Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E53E3E',
+                            orange: '#DD6B20',
+                            dark: '#1A202C'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-gradient-to-r from-red-600 to-orange-500 text-white py-12 px-4 shadow-lg text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <div class="w-28 h-28 mx-auto mb-4 rounded-full border-4 border-white shadow-md overflow-hidden bg-white flex items-center justify-center text-4xl">
+                🍲
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">Nồi Lẩu Cay Của An Kỳ</h1>
+            <p class="text-red-100 text-base md:text-lg max-w-lg mx-auto">
+                Cảm ơn bạn đã ghé thăm góc nhỏ của An Kỳ! Sự ủng hộ của bạn là "gia vị" giúp nồi lẩu ngày càng thêm đậm đà và ra nhiều bài viết hay hơn.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-12 flex-grow">
+
+        <!-- Các gói Donate / Support -->
+        <section>
+            <h2 class="text-2xl font-bold text-center text-red-700 mb-6 flex items-center justify-center gap-2">
+                <span>🔥</span> Mời An Kỳ Một Món Trong Nồi Lẩu
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition">
+                    <div class="text-4xl mb-3">🧋</div>
+                    <h3 class="font-bold text-lg text-gray-800">1 Ly Trà Sữa</h3>
+                    <p class="text-sm text-gray-500 mt-1">Nạp năng lượng cho An Kỳ thức đêm viết blog.</p>
+                    <span class="inline-block mt-4 text-orange-600 font-bold text-lg">30.000 VNĐ</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-red-400 text-center relative transform md:-translate-y-2">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Yêu thích</span>
+                    <div class="text-4xl mb-3">🥩</div>
+                    <h3 class="font-bold text-lg text-gray-800">1 Đĩa Thịt Bò Lẩu</h3>
+                    <p class="text-sm text-gray-500 mt-1">Thêm chút vị đậm đà cho bài viết tiếp theo!</p>
+                    <span class="inline-block mt-4 text-red-600 font-bold text-xl">50.000 VNĐ</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition">
+                    <div class="text-4xl mb-3">🍲</div>
+                    <h3 class="font-bold text-lg text-gray-800">Full Topping Lẩu</h3>
+                    <p class="text-sm text-gray-500 mt-1">Trở thành Siêu Hội Viên tiếp sức dài hạn.</p>
+                    <span class="inline-block mt-4 text-orange-600 font-bold text-lg">100.000 VNĐ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thông tin chuyển khoản & QR -->
+        <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-orange-100">
+            <h2 class="text-xl font-bold text-center text-gray-800 mb-6">Thông Tin Chuyển Khoản Direct</h2>
+            <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+                <!-- Mã QR Placeholder -->
+                <div class="text-center">
+                    <div class="bg-gray-100 p-3 rounded-xl border border-gray-200 inline-block">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=SUPPORTHANKY" alt="QR Bank" class="w-44 h-44 rounded-lg">
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Quét mã QR để chuyển nhanh</p>
+                </div>
+
+                <!-- Chi tiết tài khoản -->
+                <div class="space-y-4 w-full md:w-auto">
+                    <div>
+                        <span class="text-xs text-gray-400 block uppercase font-semibold">Ngân hàng</span>
+                        <span class="text-base font-bold text-gray-700">MB Bank (Ngân hàng Quân Đội)</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-gray-400 block uppercase font-semibold">Chủ tài khoản</span>
+                        <span class="text-base font-bold text-gray-700">AN KỲ</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-gray-400 block uppercase font-semibold">Số tài khoản</span>
+                        <div class="flex items-center gap-2 mt-1">
+                            <span id="account-number" class="text-xl font-mono font-bold text-red-600 bg-red-50 px-3 py-1 rounded">09999999999</span>
+                            <button onclick="copySTK()" class="bg-gray-800 hover:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg transition active:scale-95">
+                                Sao chép
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lời nhắn ủng hộ (Guestbook) -->
+        <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-orange-100 space-y-6">
+            <h2 class="text-xl font-bold text-gray-800">✍️ Gửi Lời Nhắn Đến An Kỳ</h2>
+            <form id="message-form" class="space-y-4">
+                <div>
+                    <input type="text" id="user-name" placeholder="Tên hoặc Biệt danh của bạn" required class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-400">
+                </div>
+                <div>
+                    <textarea id="user-msg" rows="3" placeholder="Lời nhắn gửi tới An Kỳ / Nồi Lẩu Cay..." required class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-400"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-lg transition">Gửi Lời Nhắn</button>
+            </form>
+
+            <!-- Danh sách tin nhắn đã gửi -->
+            <div class="pt-4 border-t border-gray-100">
+                <h3 class="text-sm font-semibold text-gray-500 mb-3">Lời nhắn gần đây</h3>
+                <div id="message-list" class="space-y-3 max-h-48 overflow-y-auto">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+        <p>© Nồi Lẩu Cay Của An Kỳ. All rights reserved.</p>
+    </footer>
+
+    <!-- Script xử lý tương tác -->
+    <script>
+        function copySTK() {
+            const stk = document.getElementById('account-number').innerText;
+            navigator.clipboard.writeText(stk).then(() => {
+                alert('Đã sao chép số tài khoản: ' + stk);
+            });
+        }
+
+        const form = document.getElementById('message-form');
+        const msgList = document.getElementById('message-list');
+
+        function loadMessages() {
+            const messages = JSON.parse(localStorage.getItem('anky_messages') || '[]');
+            if (messages.length === 0) {
+                msgList.innerHTML = '<p class="text-xs text-gray-400 italic">Chưa có lời nhắn nào. Hãy là người đầu tiên gửi nhé!</p>';
+                return;
+            }
+            msgList.innerHTML = messages.map(m => `
+                <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                    <span class="font-bold text-xs text-red-600">${m.name}</span>
+                    <p class="text-sm text-gray-700 mt-0.5">${m.msg}</p>
+                </div>
+            `).join('');
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('user-name').value;
+            const msg = document.getElementById('user-msg').value;
+
+            const messages = JSON.parse(localStorage.getItem('anky_messages') || '[]');
+            messages.unshift({ name, msg });
+            localStorage.setItem('anky_messages', JSON.stringify(messages));
+
+            form.reset();
+            loadMessages();
+        });
+
+        loadMessages();
+    </script>
+</body>
+</html>
